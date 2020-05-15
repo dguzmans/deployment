@@ -7,4 +7,4 @@ steps:
     args: ["package", "-Dmaven.test.skip=true"]
   - name: gcr.io/cloud-builders/docker
     args: ["build", "-t", "gcr.io/$PROJECT_ID/demo.deployment", "--build-arg=JAR_FILE=target/demo.deployment-0.0.1.jar", "."]
-images: ["gcr.io/$PROJECT_ID/demodeployment"]
+images: ["gcr.io/$PROJECT_ID/deployment"]
